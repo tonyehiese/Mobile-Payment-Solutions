@@ -68,7 +68,6 @@
     
     ;; Process payment
     (try! (stx-transfer? (get price item) tx-sender (get artist item)))
-    
     ;; Update inventory
     (map-set merchandise item-id {
       item-name: (get item-name item),
