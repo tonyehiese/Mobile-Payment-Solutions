@@ -225,7 +225,6 @@
     )
   )
 )
-
 ;; Get total sales count
 (define-read-only (get-sales-count)
   (var-get sale-counter)
