@@ -183,7 +183,6 @@
       (get-sales-in-range-single start-id max-id start-block end-block result))
   )
 )
-
 ;; Process a single sale ID
 (define-private (get-sales-in-range-single (current-id uint) (max-id uint) (start-block uint) (end-block uint)
                                          (acc (list 500 {id: uint, details: {buyer: principal, item-id: uint, payment-amount: uint, timestamp: uint, is-offline: bool}})))
