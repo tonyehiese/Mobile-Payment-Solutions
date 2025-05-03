@@ -83,8 +83,7 @@
       payment-amount: (get price item),
       timestamp: u0,
       is-offline: false
-    })
-    
+    }) 
     ;; Increment sale counter
     (var-set sale-counter (+ current-sale-id u1))
     (ok current-sale-id)
