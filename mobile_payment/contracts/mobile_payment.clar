@@ -100,8 +100,7 @@
     ;; Check if artist accepts offline payments
     (asserts! (get accepts-offline-payments artist-profile) (err u403))
     ;; Check inventory
-    (asserts! (> (get inventory item) u0) (err u500))
-    
+    (asserts! (> (get inventory item) u0) (err u500)) 
     ;; Update inventory
     (map-set merchandise item-id {
       item-name: (get item-name item),
